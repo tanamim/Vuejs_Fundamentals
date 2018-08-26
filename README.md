@@ -20,6 +20,7 @@ git push -u origin master
 Component name should be two words (HomePage.vue, RobotBuilder.vue)
 
 `v-bind` is :
+
 `v-on` is @
 
 `v-if` `v-show` is conditional display, where `v-show` uses css hidden to improve performance by not using rendering.
