@@ -28,6 +28,7 @@ Component name should be two words (HomePage.vue, RobotBuilder.vue)
 You should not use `v-if` and `v-for` at the same time.
 
 `<style scope>` is a local css
+
 `<style>` is a global css
 
 Even if parent scope is used, chiled scope will inherit a parent css property such as font-color where border does not.
@@ -35,10 +36,13 @@ Even if parent scope is used, chiled scope will inherit a parent css property su
 To target child elements in style, use deep selector `>>>` or `/deep/` in parent css
 
 Binding styles is `:style="{[background-color]: 'red'}"`
+
 Binding styles is `:style="{backgroundColor: 'red'}"`       // Vue allows to use CamelCase to binding css attributes that have hyphens in them
 
 Binding styles is `:style="{background: '3px solid red'}"`
+
 Binding styles is `:style="headBorderStyle"`                // Computed property
+
 Binding styles is `:style="[headBorderStyle, moreStyles]"`  // Computed property 2 (Second one overwrites the first one)
 
 Conditional style binding using computed property is:
@@ -53,7 +57,9 @@ computed: {
 ```
 
 Binding class is `:class="{'sale-border': selectedRobot.head.onSale}"` // apply only if onSale
+
 Binding class is `:class="[saleBorderClass]"` // array expression
+
 Binding class is `:class="[saleBorderClass, 'top', 'part']"`           // array expression allows multiple class attibution
 
 Conditional class binding using computed property is:
