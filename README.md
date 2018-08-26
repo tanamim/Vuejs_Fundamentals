@@ -1,5 +1,17 @@
 # Vue.js Fundamentals
 
+## Create git repository, README and push to github
+```sh
+echo "# Vuejs_Fundamentals" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:tanamim/Vuejs_Fundamentals.git
+git push -u origin master
+```
+
+## How to install Vue cli and start the initial app
+
 `npm install -g @vue/cli`
 `npm run serve`
 
